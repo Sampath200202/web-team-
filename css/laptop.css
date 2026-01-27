@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+   background: linear-gradient(135deg, #b1bdc7, #c6d3d4);
+  color: #333;
+}
+
+/* main layout */
+.product-page {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+
+.product-image {
+  width: 45%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  background: #fafafa;
+}
+
+
+.product-image img {
+   width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+ 
+
+/* right info area */
+.product-info {
+  width: 55%;
+}
+
+/* title */
+.product-info h1 {
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* price */
+.price {
+  font-size: 28px;
+  color: #7a2ca6;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* meta text */
+.meta p {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.meta span {
+  color: #999;
+  font-weight: 600;
+}
+
+.installment {
+  color: #7a2ca6 !important;
+  font-weight: 700;
+  margin-top: 14px;
+}
+
+/* showroom row */
+.showroom-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 28px 0 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* small blue button */
+.showroom-btn {
+  background: #5bb7ff;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.showroom-btn:hover {
+  background: #3aa5ff;
+}
+
+/* action buttons */
+.action-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* whatsapp button */
+.whatsapp-btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #3e9e44;
+  transform: translateY(-2px);
+}
+
+
+
+.contact-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+
