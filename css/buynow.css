@@ -26,7 +26,7 @@ body {
 /* Container */
 .container {
     background:transparent;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(500px);
     max-width: 600px;
     width: 100%;
     border-radius: 10px;
@@ -298,6 +298,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
