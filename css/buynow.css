@@ -241,7 +241,7 @@ label {
 /* Submit Button */
 button {
     color: white;
-    background:#0408f6;
+    background-color: #006aff;
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.3s ease;
@@ -299,6 +299,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
