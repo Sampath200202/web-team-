@@ -261,7 +261,7 @@ button:hover {
 }
 #submit{
  border:none;
- border-radius:600px ;
+ border-radius:600px;
 }
 
 /* Responsive */
@@ -299,6 +299,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
