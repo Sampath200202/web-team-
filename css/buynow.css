@@ -9,7 +9,7 @@
 /* Body Styling */
 body {
     background-color: #d0bfbf;
-    color: #0d0d0def;
+    color: #f3ececef;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -299,6 +299,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
