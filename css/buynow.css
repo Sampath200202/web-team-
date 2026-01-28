@@ -8,14 +8,14 @@
 
 /* Body Styling */
 body {
-    background-color: #f3ebeb;
+    background-color: #d0bfbf;
     color: #0d0d0def;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
     padding: 10px;
-    background-image: url("../bimg/background.jpg"); 
+    background: linear-gradient(135deg, #000000, #0f4c75); 
     background-size: cover;           
     background-repeat: no-repeat;     
     background-position:center; 
@@ -202,8 +202,8 @@ label {
 /* Text */
 .payment-method .text {
   font-weight: 600;
-  font-family:Arial, Helvetica, sans-serif;
-  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0d0b2d;
   font-weight: bold;
 }
 
@@ -299,6 +299,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
