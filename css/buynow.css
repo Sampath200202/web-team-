@@ -54,7 +54,7 @@ body {
 /* Heading */
 .container h1 {
     text-align: center;
-    color: #1a1a1a;
+    color: #e0e6ed;
     margin-bottom: 25px;
     font-style: italic;
     font-size: 4rem;
@@ -299,6 +299,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
