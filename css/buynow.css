@@ -240,20 +240,28 @@ label {
 
 /* Submit Button */
 button {
-    
-    background:linear-gradient(5deg, #166fce, #d33cb8);
+    color: white;
+    background:#0408f6;
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    
+    border:none;
+    border-radius:300 px;
 }
 
 button:hover {
-    background: #0b0b0b;
+    animation-name: fade in;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    background: #0f28c9;
     color: #f1f4f5;
     border: none;
     outline: none
-    
+}
+#submit{
+ border:none;
+ border-radius:600px ;
 }
 
 /* Responsive */
@@ -291,6 +299,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
