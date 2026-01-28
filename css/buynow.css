@@ -254,7 +254,7 @@ button:hover {
     animation-name: fadeIn;
     animation-duration: 5s;
     animation-timing-function: ease;
-    background: #0f28c9;
+    background: #0000ff;
     color: #f1f4f5;
     border: none;
     outline: none
@@ -299,6 +299,7 @@ button:hover {
   box-shadow: 0 4px 5px rgba(10, 2, 6, 0.35);
   
 }
+
 
 
 
