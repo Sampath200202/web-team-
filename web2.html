@@ -49,6 +49,68 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+     <script>
+      // Hamburger Menu Toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+      const dropdowns = document.querySelectorAll(".dropdown");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      // Close menu when a link is clicked
+      const navItems = navLinks.querySelectorAll("a");
+      navItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        });
+      });
+
+      // Dropdown functionality for desktop
+      dropdowns.forEach((dropdown) => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+        const menu = dropdown.querySelector(".dropdown-menu");
+
+        // Desktop: hover
+        dropdown.addEventListener("mouseenter", () => {
+          if (window.innerWidth > 768) {
+            dropdown.classList.add("active");
+            menu.style.display = "block";
+          }
+        });
+
+        dropdown.addEventListener("mouseleave", () => {
+          if (window.innerWidth > 768) {
+            dropdown.classList.remove("active");
+            menu.style.display = "none";
+          }
+        });
+
+        // Mobile: click
+        toggle.addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdown.classList.toggle("active");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+          }
+        });
+      });
+
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+          dropdowns.forEach((dropdown) => {
+            dropdown.classList.remove("active");
+            dropdown.querySelector(".dropdown-menu").style.display = "none";
+          });
+        }
+      });
+    </script>
 
 
      <h1 class="title">Phone Chargers</h1>
@@ -261,7 +323,8 @@
     </footer>
 
     </div>
-<script src="js/smartphones.js"></script>
+
 <script src="js/items.js"></script>
 </body>
+
 </html>
