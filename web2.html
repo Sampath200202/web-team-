@@ -9,115 +9,52 @@
 <body>
 
     <nav class="navbar">
-      <div class="logo">
-        <img src="imag/logo.png" alt="logo">
-      </div>
-        <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+  <div class="logo">
+    <img src="Assests/home-imgs/logo.png" alt="logo">
+  </div>
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Mobile Phones ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="apple.html">Apple</a></li>
-            <li><a href="samsung.html">Samsung</a></li>
-            <li><a href="huawei.html">Huawei</a></li>
-            <li><a href="honor.html">Honor</a></li>
-          </ul>
-        </li>
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Laptops ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="mac.html">Mac</a></li>
-            <li><a href="asus.html">Asus</a></li>
-            <li><a href="acer.html">Acer</a></li>
-            <li><a href="hp.html">HP</a></li>
-          </ul>
-        </li>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">Accessories ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="web2.html">Phone Chargers</a></li>
-            <li><a href="web3.html">Powerbanks</a></li>
-            <li><a href="web5.html">Headphone & Airpods</a></li>
-            <li><a href="web4.html">Others</a></li>
-          </ul>
-        </li>
-
-        <li><a href="smartwatch.html">Smart Watch</a></li>
-        <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="#">Mobile Phones</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Apple</a></li>
+        <li><a href="#">Samsung</a></li>
+        <li><a href="#">Huawei</a></li>
+        <li><a href="#">Honor</a></li>
       </ul>
-    </nav>
-     <script>
-      // Hamburger Menu Toggle
-      const hamburger = document.getElementById("hamburger");
-      const navLinks = document.getElementById("navLinks");
-      const dropdowns = document.querySelectorAll(".dropdown");
+    </li>
 
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("active");
-      });
+    <li class="dropdown">
+      <a href="#">Laptops</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Mac</a></li>
+        <li><a href="#">Asus</a></li>
+        <li><a href="#">Acer</a></li>
+        <li><a href="#">HP</a></li>
+      </ul>
+    </li>
 
-      // Close menu when a link is clicked
-      const navItems = navLinks.querySelectorAll("a");
-      navItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          navLinks.classList.remove("active");
-        });
-      });
+    <li class="dropdown">
+      <a href="#">Accessories</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Phone Chargers</a></li>
+        <li><a href="#">Powerbanks</a></li>
+        <li><a href="#">Headphones</a></li>
+        <li><a href="#">Others</a></li>
+      </ul>
+    </li>
 
-      // Dropdown functionality for desktop
-      dropdowns.forEach((dropdown) => {
-        const toggle = dropdown.querySelector(".dropdown-toggle");
-        const menu = dropdown.querySelector(".dropdown-menu");
-
-        // Desktop: hover
-        dropdown.addEventListener("mouseenter", () => {
-          if (window.innerWidth > 768) {
-            dropdown.classList.add("active");
-            menu.style.display = "block";
-          }
-        });
-
-        dropdown.addEventListener("mouseleave", () => {
-          if (window.innerWidth > 768) {
-            dropdown.classList.remove("active");
-            menu.style.display = "none";
-          }
-        });
-
-        // Mobile: click
-        toggle.addEventListener("click", (e) => {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            dropdown.classList.toggle("active");
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
-          }
-        });
-      });
-
-      // Handle window resize
-      window.addEventListener("resize", () => {
-        if (window.innerWidth > 768) {
-          hamburger.classList.remove("active");
-          navLinks.classList.remove("active");
-          dropdowns.forEach((dropdown) => {
-            dropdown.classList.remove("active");
-            dropdown.querySelector(".dropdown-menu").style.display = "none";
-          });
-        }
-      });
-    </script>
-
-
+    <li><a href="#">Smart Watch</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
      <h1 class="title">Phone Chargers</h1>
 
     <div class="container">
@@ -330,9 +267,25 @@
     </div>
 
 <script src="js/items.js"></script>
+    <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+    });
+  });
+</script>
 </body>
 
 </html>
+
 
 
 
